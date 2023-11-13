@@ -58,7 +58,7 @@ break;
 }
 else if(strcmp(opcode,"WORD")==0) {
 //fscanf(fsymtab,"%s %s",symlabel,symadd);
-  fprintf(fassembly,"%s\t%s\t%s\t%s\t0000%s\n",address,label,opcode,operand,operand);
+  fprintf(fassembly,"%s\t%s\t%s\t%s\t0000%s\n ",address,label,opcode,operand,operand);
   fprintf(fobject1,"T^00%s^03^00000%s\n",address,operand);
   }
   else if(strcmp(opcode,"RESW")==0) {
